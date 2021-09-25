@@ -13,6 +13,7 @@ export const UserManagement: VFC = memo(() => {
   const { getUsers, users, loading } = useAllUsers();
   const { onSelectUser, selectedUser } = useSelectUser();
   const { loginUser } = useLoginUser();
+  console.log(loginUser);
 
   useEffect(() => getUsers(), []);
 
